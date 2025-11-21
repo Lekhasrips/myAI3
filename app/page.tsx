@@ -147,9 +147,9 @@ export default function Chat() {
                 <Avatar
                   className="size-8 ring-1 ring-primary"
                 >
-                  <AvatarImage src="/bit.png" />
+                  <AvatarImage src="/logo.png" />
                   <AvatarFallback>
-                    <Image src="/bit.png" alt="Logo" width={36} height={36} />
+                    <Image src="/logo.png" alt="Logo" width={36} height={36} />
                   </AvatarFallback>
                 </Avatar>
                 <p className="tracking-tight">Chat with {AI_NAME}</p>
