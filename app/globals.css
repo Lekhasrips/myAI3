@@ -187,3 +187,23 @@ div[class*="user"] {
 [class*="user-bubble"] * {
   color: #ffffff !important;
 }
+/* Make user sent messages transparent with white text */
+[class*="user-message"],
+[class*="user-chat"],
+[class*="user-bubble"],
+[class*="message-user"],
+div:has(> [class*="user"]),
+div[class*="user"] {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 1px solid #ff6b00 !important;
+  border-radius: 8px !important;
+  padding: 8px 12px !important;
+}
+
+/* Ensure text in user messages is visible */
+[class*="user-message"] *,
+[class*="user-chat"] *,
+[class*="user-bubble"] * {
+  color: #ffffff !important;
+}
