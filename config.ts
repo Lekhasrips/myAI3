@@ -41,7 +41,7 @@ export const MODERATION_DENIAL_MESSAGE_SELF_HARM_INTENT = "Business ownership co
 export const MODERATION_DENIAL_MESSAGE_SELF_HARM_INSTRUCTIONS = "I provide business operation guidance. For personal wellbeing support, please consult appropriate professionals.";
 export const MODERATION_DENIAL_MESSAGE_VIOLENCE = "I specialize in sustainable business growth strategies. Let's discuss productive approaches.";
 export const MODERATION_DENIAL_MESSAGE_VIOLENCE_GRAPHIC = "I focus on constructive business solutions. How can I help improve your business operations?";
-export const MODERATION_DENIAL_MESSAGE_DEFAULT = "hat topic falls outside my business advisory scope. I'm here to help with MSME growth strategies.";
+export const MODERATION_DENIAL_MESSAGE_DEFAULT = "That topic falls outside my business advisory scope. I'm here to help with MSME growth strategies.";
 
 export const PINECONE_TOP_K = 40;
 export const PINECONE_INDEX_NAME = "my-ai";
