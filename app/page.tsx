@@ -158,7 +158,7 @@ export default function Chat() {
                 <Button
                   variant="outline"
                   size="sm"
-                  className="cursor-pointer"
+                  className="cursor-pointer bg-white/20 text-white border-white/30 hover:bg-white/30"
                   onClick={clearChat}
                 >
                   <Plus className="size-4" />
