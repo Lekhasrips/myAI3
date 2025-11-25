@@ -168,4 +168,22 @@ input:focus, textarea:focus {
 input::placeholder {
   color: #cccccc !important;
 }
+/* Fix user message bubbles - make them dark with white text */
+[class*="user-message"],
+[class*="user-chat"],
+[class*="user-bubble"],
+[class*="message-user"],
+div:has(> [class*="user"]),
+div[class*="user"] {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  border: 1px solid #555555 !important;
+  border-radius: 8px !important;
+}
 
+/* Ensure text in user messages is visible */
+[class*="user-message"] *,
+[class*="user-chat"] *,
+[class*="user-bubble"] * {
+  color: #ffffff !important;
+}
