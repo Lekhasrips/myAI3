@@ -134,22 +134,34 @@
 .animate-wiggle {
   animation: wiggle 1s ease-in-out infinite;
 }
-/* NUCLEAR FIX: Force ALL text to be white in chatbot */
-* {
+/* Fix form labels and placeholders to be white */
+label, 
+[class*="label"],
+[class*="title"],
+[class*="heading"] {
   color: #ffffff !important;
 }
 
-/* Ensure backgrounds stay dark */
-body, div, section, main, article, header, footer {
-  background-color: #000000 !important;
+/* Fix the placeholder-looking text in brackets */
+span:contains("["),
+div:contains("["),
+p:contains("[") {
+  color: #ffffff !important;
 }
 
-/* Style inputs properly */
-input, textarea, select {
-  background-color: #333333 !important;
-  border: 1px solid #555555 !important;
+/* Specific targeting for the form sections */
+[class*="industry"],
+[class*="company"],
+[class*="location"],
+[class*="revenue"],
+[class*="challenge"] {
+  color: #ffffff !important;
 }
 
-input::placeholder {
-  color: #cccccc !important;
+/* Make all text in the form white */
+form, 
+form *,
+[class*="form"],
+[class*="field"] {
+  color: #ffffff !important;
 }
