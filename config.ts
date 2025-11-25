@@ -26,10 +26,14 @@ export const OWNER_NAME = "Lekhasri PS";
 
 export const WELCOME_MESSAGE = `Welcome to BizGuide! To provide you with the most accurate MSME guidance, could you share:
 
-🏢 **Industry:** [Manufacturing/Retail/Services/Other]
+🏢 **Industry:** [Manufacturing/Retail/Services/Other] 
+
 👥 **Company Size:** [Micro/Small/Medium]  
+
 📍 **Location:** [State/City]
+
 💰 **Annual Revenue:** [Approximate range]
+
 🎯 **Current Challenge:** [Cash flow/Marketing/Operations/Growth]
 
 The more details you provide, the more tailored my advice will be`;
