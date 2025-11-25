@@ -134,42 +134,22 @@
 .animate-wiggle {
   animation: wiggle 1s ease-in-out infinite;
 }
-/* Fix for chatbot text visibility - Add this after the owl animation */
-#brgui-chat-widget,
-.chatbot-container,
-[class*="chat"] {
+/* NUCLEAR FIX: Force ALL text to be white in chatbot */
+* {
   color: #ffffff !important;
 }
 
-#brgui-chat-widget input::placeholder {
-  color: #cccccc !important;
+/* Ensure backgrounds stay dark */
+body, div, section, main, article, header, footer {
+  background-color: #000000 !important;
 }
 
-#brgui-chat-widget input[type="text"] {
-  color: #ffffff !important;
+/* Style inputs properly */
+input, textarea, select {
   background-color: #333333 !important;
   border: 1px solid #555555 !important;
 }
 
-#brgui-chat-widget p,
-#brgui-chat-widget span,
-#brgui-chat-widget label,
-#brgui-chat-widget div {
-  color: #ffffff !important;
-}
-/* ADD THIS AT THE VERY VERY END - After all your existing code */
-/* Force all text in dark mode to be visible */
-.dark {
-  color: oklch(0.985 0 0) !important;
-}
-
-.dark * {
-  color: inherit !important;
-}
-
-/* Specific fix for chatbot system responses */
-.dark [class*="message"]:not([class*="user"]),
-.dark [class*="response"]:not([class*="user"]),
-.dark [class*="bot"] {
-  color: oklch(0.985 0 0) !important;
+input::placeholder {
+  color: #cccccc !important;
 }
