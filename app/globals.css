@@ -138,20 +138,15 @@
 body, div, p, span, h1, h2, h3, h4, h5, h6, li, ul, ol, label, a {
   color: #ffffff !important;
 }
-
-/* Nuclear option for header - target ANY top element */
-header, [class*="header"], nav, [class*="nav"], [class*="banner"],
-[class*="top"], [class*="bar"], [class*="menu"],
-div:first-child, body > div:first-child {
+/* Only make actual header orange */
+header, nav {
   background-color: #ff6b00 !important;
-  background: #ff6b00 !important;
 }
 
-/* Keep main content dark */
-main, section, [class*="content"], [class*="container"], [class*="card"] {
+/* Ensure everything else stays black */
+body {
   background-color: #000000 !important;
 }
-
 /* Style inputs properly with orange focus state */
 input, textarea {
   background-color: #333333 !important;
