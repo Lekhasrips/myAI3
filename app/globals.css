@@ -139,9 +139,12 @@ body, div, p, span, h1, h2, h3, h4, h5, h6, li, ul, ol, label, a {
   color: #ffffff !important;
 }
 
-/* Keep header orange */
-header, [class*="header"], nav, [class*="nav"], [class*="banner"] {
+/* Nuclear option for header - target ANY top element */
+header, [class*="header"], nav, [class*="nav"], [class*="banner"],
+[class*="top"], [class*="bar"], [class*="menu"],
+div:first-child, body > div:first-child {
   background-color: #ff6b00 !important;
+  background: #ff6b00 !important;
 }
 
 /* Keep main content dark */
@@ -149,11 +152,22 @@ main, section, [class*="content"], [class*="container"], [class*="card"] {
   background-color: #000000 !important;
 }
 
-/* Style inputs properly */
+/* Style inputs properly with orange focus state */
 input, textarea {
   background-color: #333333 !important;
   color: #ffffff !important;
   border: 1px solid #555555 !important;
+}
+
+/* Orange border when input is not focused */
+input:not(:focus), textarea:not(:focus) {
+  border: 1px solid #ff6b00 !important;
+}
+
+/* Orange border when input is focused */
+input:focus, textarea:focus {
+  border: 1px solid #ff6b00 !important;
+  outline: 2px solid #ff6b00 !important;
 }
 
 input::placeholder {
