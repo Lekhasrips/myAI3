@@ -147,7 +147,9 @@ export default function Chat() {
                 <Avatar
                   className="size-8 ring-1 ring-primary"
                 >
-                  <AvatarImage src="/logo.png" />
+                  <div className="w-12 h-12 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                     <span className="text-2xl animate-wiggle">🦉</span>
+                  </div>
                   <AvatarFallback>
                     <Image src="/logo.png" alt="Logo" width={36} height={36} />
                   </AvatarFallback>
