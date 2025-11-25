@@ -137,9 +137,9 @@ export default function Chat() {
   }
 
   return (
-    <div className="flex h-screen items-center justify-center font-sans dark:bg-black">
-      <main className="w-full dark:bg-black h-screen relative">
-        <div className="fixed top-0 left-0 right-0 z-50 bg-blue-600 text-white shadow-lg overflow-visible pb-6">
+    <div className="flex h-screen items-center justify-center font-sans bg-gradient-to-br from-gray-900 to-gray-800">
+      <main className="w-full bg-gradient-to-br from-gray-900 to-gray-800 h-screen relative">
+        <div className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-amber-700 to-orange-800 text-white shadow-lg overflow-visible pb-6">
           <div className="relative overflow-visible">
             <ChatHeader>
               <ChatHeaderBlock />
@@ -204,7 +204,7 @@ export default function Chat() {
                           <Input
                             {...field}
                             id="chat-form-message"
-                            className="h-15 pr-15 pl-5 bg-white border-2 border-blue-300 rounded-xl shadow-sm"
+                            className="h-15 pr-15 pl-5 bg-gray-800 border-2 border-amber-600 rounded-xl shadow-sm text-white placeholder-gray-400"
                             placeholder="Type your message here..."
                             disabled={status === "streaming"}
                             aria-invalid={fieldState.invalid}
@@ -245,7 +245,7 @@ export default function Chat() {
               </form>
             </div>
           </div>
-          <div className="w-full px-5 py-3 items-center flex justify-center text-xs text-gray-600 bg-gray-50">
+          <div className="w-full px-5 py-3 items-center flex justify-center text-xs text-gray-400 bg-gray-900 border-t border-gray-700">
             © {new Date().getFullYear()} {OWNER_NAME}&nbsp;<Link href="/terms" className="underline">Terms of Use</Link>&nbsp;Powered by&nbsp;<Link href="https://ringel.ai/" className="underline">Ringel.AI</Link>
           </div>
         </div>
