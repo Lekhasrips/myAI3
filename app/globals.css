@@ -173,3 +173,32 @@ input:focus, textarea:focus {
 input::placeholder {
   color: #cccccc !important;
 }
+/* Fix input box - remove black background rectangle */
+input, textarea {
+  background-color: #333333 !important;
+  color: #ffffff !important;
+  border: 2px solid #ff6b00 !important;
+  border-radius: 8px !important;
+  padding: 12px 16px !important;
+}
+
+/* Remove any parent container backgrounds */
+input:focus, textarea:focus {
+  border: 2px solid #ff6b00 !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.2) !important;
+}
+
+input::placeholder {
+  color: #cccccc !important;
+}
+
+/* Fix the container around the input */
+[class*="input-container"],
+[class*="message-input"],
+[class*="chat-input"],
+div:has(> input),
+div:has(> textarea) {
+  background-color: transparent !important;
+  border: none !important;
+}
