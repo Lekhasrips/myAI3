@@ -134,34 +134,28 @@
 .animate-wiggle {
   animation: wiggle 1s ease-in-out infinite;
 }
-/* Fix form labels and placeholders to be white */
-label, 
-[class*="label"],
-[class*="title"],
-[class*="heading"] {
+/* FIX: Make all text white but keep proper backgrounds */
+body, div, p, span, h1, h2, h3, h4, h5, h6, li, ul, ol, label, a {
   color: #ffffff !important;
 }
 
-/* Fix the placeholder-looking text in brackets */
-span:contains("["),
-div:contains("["),
-p:contains("[") {
-  color: #ffffff !important;
+/* Keep header orange */
+header, [class*="header"], nav, [class*="nav"], [class*="banner"] {
+  background-color: #ff6b00 !important;
 }
 
-/* Specific targeting for the form sections */
-[class*="industry"],
-[class*="company"],
-[class*="location"],
-[class*="revenue"],
-[class*="challenge"] {
-  color: #ffffff !important;
+/* Keep main content dark */
+main, section, [class*="content"], [class*="container"], [class*="card"] {
+  background-color: #000000 !important;
 }
 
-/* Make all text in the form white */
-form, 
-form *,
-[class*="form"],
-[class*="field"] {
+/* Style inputs properly */
+input, textarea {
+  background-color: #333333 !important;
   color: #ffffff !important;
+  border: 1px solid #555555 !important;
+}
+
+input::placeholder {
+  color: #cccccc !important;
 }
