@@ -134,3 +134,26 @@
 .animate-wiggle {
   animation: wiggle 1s ease-in-out infinite;
 }
+/* Fix for chatbot text visibility - Add this after the owl animation */
+#brgui-chat-widget,
+.chatbot-container,
+[class*="chat"] {
+  color: #ffffff !important;
+}
+
+#brgui-chat-widget input::placeholder {
+  color: #cccccc !important;
+}
+
+#brgui-chat-widget input[type="text"] {
+  color: #ffffff !important;
+  background-color: #333333 !important;
+  border: 1px solid #555555 !important;
+}
+
+#brgui-chat-widget p,
+#brgui-chat-widget span,
+#brgui-chat-widget label,
+#brgui-chat-widget div {
+  color: #ffffff !important;
+}
