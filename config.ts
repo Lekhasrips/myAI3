@@ -21,27 +21,27 @@ function getDateAndTime(): string {
 
 export const DATE_AND_TIME = getDateAndTime();
 
-export const AI_NAME = "MyAI3";
+export const AI_NAME = "BizGuide";
 export const OWNER_NAME = "Lekhasri PS";
 
-export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, an AI assistant created by ${OWNER_NAME}.`
+export const WELCOME_MESSAGE = `Hello! I'm ${AI_NAME}, your dedicated business growth partner. I'm here to help you with MSME strategies, market insights, and operational guidance. How can I assist your business today?`
 
-export const CLEAR_CHAT_TEXT = "New";
+export const CLEAR_CHAT_TEXT = "New Conversation";
 
-export const MODERATION_DENIAL_MESSAGE_SEXUAL = "I can't discuss explicit sexual content. Please ask something else.";
-export const MODERATION_DENIAL_MESSAGE_SEXUAL_MINORS = "I can't discuss content involving minors in a sexual context. Please ask something else.";
-export const MODERATION_DENIAL_MESSAGE_HARASSMENT = "I can't engage with harassing content. Please be respectful.";
-export const MODERATION_DENIAL_MESSAGE_HARASSMENT_THREATENING = "I can't engage with threatening or harassing content. Please be respectful.";
-export const MODERATION_DENIAL_MESSAGE_HATE = "I can't engage with hateful content. Please be respectful.";
-export const MODERATION_DENIAL_MESSAGE_HATE_THREATENING = "I can't engage with threatening hate speech. Please be respectful.";
-export const MODERATION_DENIAL_MESSAGE_ILLICIT = "I can't discuss illegal activities. Please ask something else.";
-export const MODERATION_DENIAL_MESSAGE_ILLICIT_VIOLENT = "I can't discuss violent illegal activities. Please ask something else.";
-export const MODERATION_DENIAL_MESSAGE_SELF_HARM = "I can't discuss self-harm. If you're struggling, please reach out to a mental health professional or crisis helpline.";
-export const MODERATION_DENIAL_MESSAGE_SELF_HARM_INTENT = "I can't discuss self-harm intentions. If you're struggling, please reach out to a mental health professional or crisis helpline.";
-export const MODERATION_DENIAL_MESSAGE_SELF_HARM_INSTRUCTIONS = "I can't provide instructions related to self-harm. If you're struggling, please reach out to a mental health professional or crisis helpline.";
-export const MODERATION_DENIAL_MESSAGE_VIOLENCE = "I can't discuss violent content. Please ask something else.";
-export const MODERATION_DENIAL_MESSAGE_VIOLENCE_GRAPHIC = "I can't discuss graphic violent content. Please ask something else.";
-export const MODERATION_DENIAL_MESSAGE_DEFAULT = "Your message violates our guidelines. I can't answer that.";
+export const MODERATION_DENIAL_MESSAGE_SEXUAL = "I focus on business-related discussions. Let's keep our conversation professional and productive.";
+export const MODERATION_DENIAL_MESSAGE_SEXUAL_MINORS = "I provide business guidance for established enterprises. Let's focus on professional topics.";
+export const MODERATION_DENIAL_MESSAGE_HARASSMENT = "I'm here to provide business support in a respectful manner. Let's maintain professional discourse.";
+export const MODERATION_DENIAL_MESSAGE_HARASSMENT_THREATENING = "I provide constructive business advice. Let's keep our discussion professional.";
+export const MODERATION_DENIAL_MESSAGE_HATE = "I promote inclusive business practices. Let's discuss how we can support diverse entrepreneurship.";
+export const MODERATION_DENIAL_MESSAGE_HATE_THREATENING = "I specialize in positive business growth strategies. Let's focus on constructive solutions.";
+export const MODERATION_DENIAL_MESSAGE_ILLICIT = "I provide guidance on legal business practices and compliance. Let's discuss legitimate business strategies.";
+export const MODERATION_DENIAL_MESSAGE_ILLICIT_VIOLENT = "I focus on peaceful business development. How can I help with your business challenges?";
+export const MODERATION_DENIAL_MESSAGE_SELF_HARM = "Running a business can be challenging. For business stress management, I recommend connecting with small business support networks or please reach out to a mental health professional or crisis helpline.";
+export const MODERATION_DENIAL_MESSAGE_SELF_HARM_INTENT = "Business ownership comes with pressures. For support with business challenges, consider reaching out to entrepreneurship mentors or please reach out to a mental health professional or crisis helpline.";
+export const MODERATION_DENIAL_MESSAGE_SELF_HARM_INSTRUCTIONS = "I provide business operation guidance. For personal wellbeing support, please consult appropriate professionals.";
+export const MODERATION_DENIAL_MESSAGE_VIOLENCE = "I specialize in sustainable business growth strategies. Let's discuss productive approaches.";
+export const MODERATION_DENIAL_MESSAGE_VIOLENCE_GRAPHIC = "I focus on constructive business solutions. How can I help improve your business operations?";
+export const MODERATION_DENIAL_MESSAGE_DEFAULT = "hat topic falls outside my business advisory scope. I'm here to help with MSME growth strategies.";
 
 export const PINECONE_TOP_K = 40;
 export const PINECONE_INDEX_NAME = "my-ai";
