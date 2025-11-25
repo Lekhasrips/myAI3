@@ -157,7 +157,7 @@
 #brgui-chat-widget div {
   color: #ffffff !important;
 }
-* ADD THIS AT THE VERY VERY END - After all your existing code */
+/* ADD THIS AT THE VERY VERY END - After all your existing code */
 /* Force all text in dark mode to be visible */
 .dark {
   color: oklch(0.985 0 0) !important;
